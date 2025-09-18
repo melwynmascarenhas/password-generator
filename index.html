@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Generate a <span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+      </header>
+
+      <section class="controls">
+        <label
+          >Password length:
+          <input type="number" id="lengthInput" min="6" max="32" value="12" />
+        </label>
+        <label>
+          <input type="checkbox" id="useSymbols" checked /> Include symbols
+        </label>
+        <label>
+          <input type="checkbox" id="useNumbers" checked /> Include numbers
+        </label>
+      </section>
+
+      <button id="generateBtn">Generate passwords</button>
+
+      <hr />
+
+      <section class="results">
+        <div class="password" id="pw1"></div>
+        <div class="password" id="pw2"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

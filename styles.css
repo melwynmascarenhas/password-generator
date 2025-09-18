@@ -1,0 +1,89 @@
+:root {
+  --bg: #f0fff5;
+  --card: #fff;
+  --text: #111;
+  --accent: #10b981;
+  --pw-bg: #1f2937;
+  --pw-text: #e0f5d8;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: var(--text);
+}
+
+.container {
+  background: var(--card);
+  padding: 32px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+
+header h1 span {
+  color: var(--accent);
+}
+
+header p {
+  margin: 0 0 18px 0;
+  color: #555;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-size: 0.9rem;
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.results {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.password {
+  flex: 1;
+  background: var(--pw-bg);
+  color: var(--pw-text);
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-family: monospace;
+  cursor: pointer;
+  font-size: 0.9rem;
+  overflow-wrap: break-word;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
